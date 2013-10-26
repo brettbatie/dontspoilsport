@@ -1,0 +1,534 @@
+@font-face {
+        font-family: "ESPN";
+        src: url(http://:/) format("No-IE-404"), url('http://batie.com/dontspoilsports/fonts/esp_bdit.ttf');
+}
+
+html {
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+        color: #333;
+        background-color: #333;
+}
+
+body {
+	margin: 0;
+}
+
+header {
+	padding: 2em 0;	
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #C72524 40%, #333333 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #C72524 40%, #333333 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #C72524 40%, #333333 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.4, #C72524), color-stop(1, #333333));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #C72524 40%, #333333 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #C72524 40%, #333333 100%);
+	background-color: #C72524;
+}
+
+h1 {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 900px;
+        font-family: "ESPN", Arial;
+	font-size: 300%;
+	font-weight: normal;
+        color: #fff;
+	text-align: center;
+}
+
+.wrapper {
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #333333 0%, #F5F5F5 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #333333 0%, #F5F5F5 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #333333 0%, #F5F5F5 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #333333), color-stop(1, #F5F5F5));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #333333 0%, #F5F5F5 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #333333 0%, #F5F5F5 100%);
+}
+
+.main {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 900px;
+	padding: 0 0.5em;
+	background-color: #eee;
+	border: #666 solid 1px;
+}
+
+a.jump {
+	display: inline-block;
+	margin: 0.25em;
+	padding: 0.5em;
+	font-size: 100%;
+	color: #fff;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #C72524), color-stop(1, #801817));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #C72524 0%, #801817 100%);
+	background-color: #C72524;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.division {
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	margin-left: 2%;
+}
+
+h2 {
+	clear: both;
+	padding: 1em 0;
+	text-transform: uppercase;
+	font-size: 100%;
+	font-weight: normal;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.scores h2 {
+	border: none;
+}
+
+h2.nomargin {
+	margin-top: 0;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox] + label {
+	display: inline-block;
+	margin-bottom: 0.25em;
+	width: 75%;
+	height: 52px;
+	padding: 20px 0 0 100px;
+	font-size: 150%;
+	background-image: url('/dontspoilsports/images/logos.png');
+	background-repeat: no-repeat;
+	float: left;
+	clear: left;
+	border-radius: 10px;
+}
+
+input[type=checkbox]:checked + label {
+	box-shadow: inset 0 0 20px #333;
+}
+
+/*** Individual Teams on Front Page ***/
+
+label[for=BAL] {
+	background-position: 10px 0px;
+}
+
+label[for=CIN] {
+	background-position: 10px -72px;
+}
+
+label[for=CLE] {
+	background-position: 10px -144px;
+}
+
+label[for=PIT] {
+	background-position: 10px -216px;
+}
+
+label[for=HOU] {
+	background-position: 10px -288px;
+}
+
+label[for=IND] {
+	background-position: 10px -360px;
+}
+
+label[for=JAC] {
+	background-position: 10px -432px;
+}
+
+label[for=TEN] {
+	background-position: 10px -504px;
+}
+
+label[for=BUF] {
+	background-position: 10px -576px;
+}
+
+label[for=MIA] {
+	background-position: 10px -648px;
+}
+
+label[for=NE] {
+	background-position: 10px -720px;
+}
+
+label[for=NYJ] {
+	background-position: 10px -792px;
+}
+
+label[for=DEN] {
+	background-position: 10px -864px;
+}
+
+label[for=KC] {
+	background-position: 10px -936px;
+}
+
+label[for=OAK] {
+	background-position: 10px -1008px;
+}
+
+label[for=SD] {
+	background-position: 10px -1080px;
+}
+
+label[for=CHI] {
+	background-position: 10px -1152px;
+}
+
+label[for=DET] {
+	background-position: 10px -1224px;
+}
+
+label[for=GB] {
+	background-position: 10px -1296px;
+}
+
+label[for=MIN] {
+	background-position: 10px -1368px;
+}
+
+label[for=ATL] {
+	background-position: 10px -1440px;
+}
+
+label[for=CAR] {
+	background-position: 10px -1512px;
+}
+
+label[for=NO] {
+	background-position: 10px -1584px;
+}
+
+label[for=TB] {
+	background-position: 10px -1656px;
+}
+
+label[for=DAL] {
+	background-position: 10px -1728px;
+}
+
+label[for=NYG] {
+	background-position: 10px -1800px;
+}
+
+label[for=PHI] {
+	background-position: 10px -1872px;
+}
+
+label[for=WAS] {
+	background-position: 10px -1944px;
+}
+
+label[for=ARI] {
+	background-position: 10px -2016px;
+}
+
+label[for=SF] {
+	background-position: 10px -2088px;
+}
+
+label[for=SEA] {
+	background-position: 10px -2160px;
+}
+
+label[for=STL] {
+	background-position: 10px -2232px;
+}
+
+/*** End Team Logos ***/
+
+input[type=submit] {
+	margin: 1em 10%;
+	padding: 0.5em 0;
+	width: 80%;
+	font-size: 150%;
+	color: #fff;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #C72524), color-stop(1, #801817));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #C72524 0%, #801817 100%);
+	background-color: #C72524;
+	border: none;
+	border-radius: 10px;
+}
+
+input[type=submit]:hover {
+	cursor: pointer;
+}
+
+footer {
+	margin: 1em auto 0;
+	min-height: 4em;
+	width: 90%;
+	max-width: 900px;
+	padding: 0 0.5em;
+	background-color: #C72524;
+	border: 1px solid #C72524;
+}
+
+footer a {
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*** ALL ***/
+
+/*** Scores ***/
+
+.scores {
+	display: inline-block;
+	vertical-align: top;
+	width: 28%;
+	font-size: 75%;
+	color: #fff;
+}
+
+.spoil {
+	margin-top: 20px;
+}
+
+.spoil a.unfilter {
+	width: 100%;
+	margin: 0 0 0.5em 0;
+}
+
+.unspoil {
+	padding: 3%;
+	margin: 10px 1%;
+	background-color: #333;
+}
+
+a#change,
+a.unfilter {
+	display: inline-block;
+	margin: 0.5em 10% 0.25em;
+	padding: 0.5em 0;
+	width: 80%;
+	font-size: 150%;
+	color: #fff;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #C72524), color-stop(1, #801817));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #C72524 0%, #801817 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #C72524 0%, #801817 100%);
+	background-color: #C72524;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+}
+
+#week a {
+	display: inline-block;
+	margin: 0.25em 1em 0 0;
+	padding: 0.5em 0;
+	width: 3em;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid #fff;
+}
+
+.scores a.selected {
+	font-weight: bold;
+	background-color: #C72524;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr.home td {
+	padding-top: 0.5em;
+	border-top: 1px solid #999;
+}
+
+tr.away td {
+	padding-bottom: 0.5em;
+}
+
+td.name {
+	width: 100%;
+}
+
+td.win {
+	font-weight: bold;
+	text-align: center;
+}
+
+td.lose {
+	color: #ccc;
+	text-align: center;
+}
+
+/*** News ***/
+
+.news {
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px 1%;
+	padding-left: 3%;
+	width: 65%;
+	border-left: 1px solid #ccc;	
+}
+
+.news a {
+	color: #C72524;
+	text-decoration: none;
+}
+
+.news .first img {
+	border: 5px solid #999;
+	width: 100%;
+	height: auto;
+}
+
+.news .first a {
+	font-size: 150%;
+}
+
+.news .second {
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+	width: 30%;
+}
+
+.news .second img {
+	border: 3px solid #999;
+	width: 95%;
+	height: auto;
+}
+
+p.caption {
+	margin: 0;
+	font-size: 75%;
+	line-height: 1em;
+}
+
+.filtered {
+	margin-top: 2em;
+	width: 100%;
+}
+
+.news ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 60%;
+	margin: 20px 0 0 4%;
+	padding-left: 5%;
+	border-left: 1px solid #ccc;
+	font-size: 75%;
+}
+
+.news ul.tabs {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+
+ul.tabs li {
+	display: inline-block;
+	margin-bottom: 0.5em;
+}
+
+ul.tabs li a {
+	display: inline-block;
+	width: 8em;
+	padding: 0.5em 0;
+	text-align: center;
+	border: 1px solid #333;
+}
+
+ul.tabs li a.selected {
+	color: #fff;
+	background-color: #C72524;
+}
+
+.other {
+	display: none;
+}
+
+#previews {
+	display: block;
+}
+
+.other h3 {
+	font-weight: normal;
+	margin-bottom: 0;
+}
+
+.other div {
+	font-size: 75%;
+}
+
+.about img {
+	border: 5px solid #999;
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 750px) {
+
+	html {
+		min-width: 525px;
+	}
+
+	.main {
+		width: 95%;
+	}
+
+	.division {
+		width: 95%;
+	}
+
+}
